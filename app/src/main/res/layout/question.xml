@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        style="@style/QuestionText"
+        android:text="1. What is the time limit for filing a complaint with the BACB ?" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:text="A."
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="Which of the follo  modified:   app/src/main/java/com/android/elliotmill/quizapp/questions/Question.java ?" />
+
+        <CheckBox
+            android:id="@+id/cbOptA"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:text="B."
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="Which of the following are Presidents of the United States ?" />
+
+        <CheckBox
+            android:id="@+id/cbOptB"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:text="C."
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="Which of the following are Presidents of the United States ?" />
+        <CheckBox
+            android:id="@+id/cbOptC"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:text="D."
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="Which of the following are Presidents of the United States ?  modified:   app/src/main/java/com/android/elliotmill/quizapp/questions/Question.java
+" />
+        <CheckBox
+            android:id="@+id/cbOptD"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+</LinearLayout>
