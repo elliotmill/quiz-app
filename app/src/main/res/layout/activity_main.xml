@@ -4,34 +4,69 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
-
-    <ProgressBar
-        android:id="@+id/pbQuestions"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    <LinearLayout
+        android:id="@+id/layout_questions"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:indeterminate="false"
-        android:max="100"
-        android:progress="20" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvProgress"
-        style="@style/ProgressText"
-        android:layout_marginBottom="15dp"
-        android:text="Question 1 of 2 (50%)" />
+        <ProgressBar
+            android:id="@+id/pbQuestions"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="20" />
 
-    <ScrollView
+        <TextView
+            android:id="@+id/tvProgress"
+            style="@style/ProgressText"
+            android:layout_marginBottom="15dp"
+            android:text="Question 1 of 2 (50%)" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <include layout="@layout/question" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnNextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_report"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:text="@string/final_score"/>
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="9/10"
+            android:textSize="78sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_complete"
+            android:text="@string/complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
-        <include layout="@layout/question" />
-    </ScrollView>
-
-    <Button
-        android:id="@+id/tvNextButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/next" />
 </LinearLayout>

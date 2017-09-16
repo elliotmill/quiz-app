@@ -37,9 +37,12 @@
                 android:id="@+id/tvOptA"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:layout_weight="1"
-                android:paddingTop="5dp"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
                 android:text="Which of the follo  modified:   app/src/main/java/com/android/elliotmill/quizapp/questions/Question.java ?" />
 
         <CheckBox
@@ -75,7 +78,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#000"
                 android:text="Which of the following are Presidents of the United States ?" />
 
         <CheckBox
@@ -111,8 +118,26 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingTop="5dp"
-                android:text="Which of the following are Presidents of the United States ?" />
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Which of the following are Presidents of the United States  8 files changed, 314 insertions(+), 19 deletions(-)
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 app/src/main/java/com/android/elliotmill/quizapp/questions/Question.java
+ rewrite app/src/main/res/layout/activity_main.xml (77%)
+ create mode 100644 app/src/main/res/layout/question.xml
+➜  QuizApp git:(master) git push origin
+Counting objects: 23, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (23/23), 3.89 KiB | 0 bytes/s, done.
+Total 23 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 6 local objects.
+To github.com:elliotmill/quiz-app.git
+   b1d6f1d..7d38a53  master -> master
+?" />
         <CheckBox
             android:id="@+id/cbOptC"
             android:layout_marginTop="5dp"
@@ -146,7 +171,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="#000"
                 android:text="Which of the following are Presidents of the United States ?  modified:   app/src/main/java/com/android/elliotmill/quizapp/questions/Question.java
 " />
         <CheckBox
